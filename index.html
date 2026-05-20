@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CoinData — Numismatic Auction Data</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="#" class="logo"><img src="logo.svg" alt="DataNeeds" style="height:80px;vertical-align:middle;"></a>
+      <div class="nav-links">
+        <a href="#datasets">Datasets</a>
+        <a href="#samples">Samples</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <p class="eyebrow">Numismatic data marketplace</p>
+    <h1>Structured coin auction data for researchers, dealers, and platforms</h1>
+    <p class="hero-sub">We collect and organize realized price data from major coin auction houses — including rare Indian sources not available anywhere else. Browse the datasets below or contact us with your requirement.</p>
+    <div class="hero-stats">
+      <div class="stat"><span class="num">8</span><span class="label">Data sources</span></div>
+      <div class="divider-v"></div>
+      <div class="stat"><span class="num">500K+</span><span class="label">Auction records</span></div>
+      <div class="divider-v"></div>
+      <div class="stat"><span class="num">Weekly</span><span class="label">Update frequency</span></div>
+    </div>
+    <div class="hero-btns">
+      <a href="#datasets" class="btn-primary">Browse datasets</a>
+      <a href="#samples" class="btn-ghost">View sample data</a>
+    </div>
+  </section>
+
+  <section class="section" id="datasets">
+    <h2>What we have</h2>
+    <p class="section-sub">Click any dataset to jump to its sample data below.</p>
+    <div class="ds-grid">
+      <a class="ds-card" href="#samples" data-tab="oswal"><div class="ds-head"><span class="ds-name">Oswal Auctions</span><span class="ds-badge india">India</span></div><p class="ds-desc">Realized prices from one of India's leading coin auction houses. Covers ancient, medieval, and modern Indian coinage.</p><div class="ds-meta"><span>10,000+ records</span><span>CSV / JSON</span></div></a>
+      <a class="ds-card" href="#samples" data-tab="jain"><div class="ds-head"><span class="ds-name">Jain Auctions</span><span class="ds-badge india">India</span></div><p class="ds-desc">Lot-level auction results from Jain's India coin sales. Covers ancient, medieval, and modern Indian coinage.</p><div class="ds-meta"><span>13,000+ records</span><span>CSV / JSON</span></div></a>
+      <a class="ds-card" href="#samples" data-tab="ics"><div class="ds-head"><span class="ds-name">Indian Coins &amp; Stamps</span><span class="ds-badge india">India</span></div><p class="ds-desc">Indian coin catalog with current prices. Covers commemorative and standard circulation issues.</p><div class="ds-meta"><span>3,000+ records</span><span>CSV / JSON</span></div></a>
+      <a class="ds-card" href="#samples" data-tab="pcgs"><div class="ds-head"><span class="ds-name">PCGS</span><span class="ds-badge world">World</span></div><p class="ds-desc">Graded coin prices, auction records, and population data. US and world coins with estimated values by grade.</p><div class="ds-meta"><span>28,000+ records</span><span>CSV / JSON</span></div></a>
+      <a class="ds-card" href="#samples" data-tab="numista"><div class="ds-head"><span class="ds-name">Numista</span><span class="ds-badge world">World</span></div><p class="ds-desc">World coin catalog with specifications, mintage figures, composition, dimensions, and past sales.</p><div class="ds-meta"><span>300,000+ records</span><span>CSV / JSON</span></div></a>
+      <a class="ds-card" href="#samples" data-tab="zeno"><div class="ds-head"><span class="ds-name">Zeno</span><span class="ds-badge ancient">Ancient</span></div><p class="ds-desc">Ancient and medieval world coin listings with context, material, weight, and mint location.</p><div class="ds-meta"><span>350,000+ records</span><span>CSV / JSON</span></div></a>
+      <a class="ds-card" href="#samples" data-tab="sedwick"><div class="ds-head"><span class="ds-name">Sedwick</span><span class="ds-badge world">World</span></div><p class="ds-desc">Latin American and world shipwreck coin auction results with hammer prices and descriptions.</p><div class="ds-meta"><span>12,000+ records</span><span>CSV / JSON</span></div></a>
+      <a class="ds-card" href="#samples" data-tab="vauctions"><div class="ds-head"><span class="ds-name">Vauctions</span><span class="ds-badge ancient">Ancient</span></div><p class="ds-desc">Online auction results for ancient world coins — Greek, Roman, Islamic, and more.</p><div class="ds-meta"><span>15,000+ records</span><span>CSV / JSON</span></div></a>
+    </div>
+  </section>
+
+  <section class="section alt" id="samples">
+    <div class="samples-inner">
+      <h2>Sample data</h2>
+      <p class="section-sub">A preview of each dataset. Contact us to receive a full sample file.</p>
+
+      <div class="tabs">
+        <button class="tab active" data-tab="oswal">Oswal Auctions</button>
+        <button class="tab" data-tab="jain">Jain Auctions</button>
+        <button class="tab" data-tab="ics">Indian Coins &amp; Stamps</button>
+        <button class="tab" data-tab="pcgs">PCGS</button>
+        <button class="tab" data-tab="numista">Numista</button>
+        <button class="tab" data-tab="zeno">Zeno</button>
+        <button class="tab" data-tab="sedwick">Sedwick</button>
+        <button class="tab" data-tab="vauctions">Vauctions</button>
+      </div>
+
+      <!-- OSWAL -->
+      <div class="tab-content active" id="tab-oswal">
+        <div class="table-wrap"><table>
+          <thead><tr><th>Image</th><th>Lot</th><th>Category</th><th>Metal</th><th>Description</th><th>Estimate (₹)</th><th>Sold (₹)</th></tr></thead>
+          <tbody>
+            <tr><td><img src="https://oswal.auction/AucLots/135/2.jpg" alt=""></td><td>2</td><td>Ancient: Punch Marked</td><td>Silver</td><td>Vidarbha Janapada, Melghat region, Silver ½ Karshapana, 1.67g — About uncirculated.</td><td>8,000–10,000</td><td class="sold">9,000</td></tr>
+            <tr><td><img src="https://oswal.auction/AucLots/135/6.jpg" alt=""></td><td>6</td><td>Ancient: Post Mauryan</td><td>Copper</td><td>Central Malwa, Vidisha, Eran region, Uninscribed Cast Copper, 1.49g — Very fine.</td><td>2,000–2,500</td><td class="sold">2,200</td></tr>
+            <tr><td><img src="https://oswal.auction/AucLots/135/8.jpg" alt=""></td><td>8</td><td>Ancient: Baktrian Greeks</td><td>Copper</td><td>Bactrian Greeks, Diodotos, Copper, 2.44g — Very fine+, rare.</td><td>3,000–4,000</td><td class="sold">9,000</td></tr>
+            <tr><td><img src="https://oswal.auction/AucLots/135/11.jpg" alt=""></td><td>11</td><td>Ancient: Baktrian Greeks</td><td>Bronze</td><td>Bactrian Greeks, Euthydemos I, Bronze, 9.90g — Extremely fine, rare.</td><td>6,000–7,000</td><td class="sold">8,000</td></tr>
+            <tr><td><img src="https://oswal.auction/AucLots/135/13.jpg" alt=""></td><td>13</td><td>Ancient: Baktrian Greeks</td><td>Bronze</td><td>Bactrian Greeks, Demetrios I, Bronze, 6.40g — About extremely fine, very rare.</td><td>7,000–8,000</td><td class="sold">38,500</td></tr>
+            <tr><td><img src="https://oswal.auction/AucLots/135/14.jpg" alt=""></td><td>14</td><td>Ancient: Baktrian Greeks</td><td>Bronze</td><td>Bactrian Greeks, Euthydemos II, Bronze, 7.20g — Very fine+, rare.</td><td>5,000–6,000</td><td class="sold">15,000</td></tr>
+            <tr><td><img src="https://oswal.auction/AucLots/135/19.jpg" alt=""></td><td>19</td><td>Ancient: Baktrian Greeks</td><td>Bronze</td><td>Bactrian Greeks, Pantaleon, 13.45g, Laxmi type — About extremely fine, very rare.</td><td>8,000–10,000</td><td class="sold">27,500</td></tr>
+            <tr><td><img src="https://oswal.auction/AucLots/135/25.jpg" alt=""></td><td>25</td><td>Ancient: Imperial Kushans</td><td>Copper</td><td>Kushans, Wima Kadphises, Copper, 16.91g, Shiva-Nandi bilingual type — Very fine+.</td><td>3,000–4,000</td><td class="sold">14,100</td></tr>
+            <tr><td><img src="https://oswal.auction/AucLots/135/29.jpg" alt=""></td><td>29</td><td>Ancient: City State</td><td>Copper</td><td>City State, Tripuri, Copper, 6.68g — Patinated, very fine, rare.</td><td>6,000–7,000</td><td class="sold">6,000</td></tr>
+            <tr><td><img src="https://oswal.auction/AucLots/135/36.jpg" alt=""></td><td>36</td><td>Ancient</td><td>Lead</td><td>Monarchical coinage, Tripuri region, Bodhis of Eastern Malwa, Lead, 3.02g — Very fine.</td><td>3,000–4,000</td><td class="sold">4,900</td></tr>
+          </tbody>
+        </table></div>
+        <p class="table-note">Showing 10 of 10,000+ records from eAuction No. 29. <a href="#contact">Contact us</a> for a full sample file.</p>
+      </div>
+
+      <!-- JAIN -->
+      <div class="tab-content" id="tab-jain">
+        <div class="table-wrap"><table>
+          <thead><tr><th>Image</th><th>Lot</th><th>Period</th><th>Material</th><th>Description</th><th>Estimate (₹)</th><th>Sold (₹)</th></tr></thead>
+          <tbody>
+            <tr><td><img src="https://jah-auction-images.s3.ap-south-1.amazonaws.com/product/thumbnail/auction/1/1.webp" alt=""></td><td>1</td><td>Ancient India</td><td>Silver</td><td>Gandhara Janapada (c. 600–300 BC), Silver Shatamana, 11.56g — Very Fine.</td><td>4,000–4,500</td><td class="sold">5,000</td></tr>
+            <tr><td><img src="https://jah-auction-images.s3.ap-south-1.amazonaws.com/product/thumbnail/auction/1/2.webp" alt=""></td><td>2</td><td>Ancient India</td><td>Silver</td><td>Gandhara Janapada (c. 600–400 BC), Silver ⅛ Shatamana, 1.00g — Very Fine.</td><td>800–1,000</td><td class="sold">1,000</td></tr>
+            <tr><td><img src="https://jah-auction-images.s3.ap-south-1.amazonaws.com/product/thumbnail/auction/1/3.webp" alt=""></td><td>3</td><td>Ancient India</td><td>Silver</td><td>Shakya Janapada (c. 600–500 BC), Silver 5 Shana, 6.56g, Narhan type — Fine+.</td><td>5,000–5,500</td><td class="sold">6,000</td></tr>
+            <tr><td><img src="https://jah-auction-images.s3.ap-south-1.amazonaws.com/product/thumbnail/auction/1/5.webp" alt=""></td><td>5</td><td>Ancient India</td><td>Silver</td><td>Magadha Mahajanapada (c. 600–400 BC), Silver Karshapana, 3.05g — Extremely Fine.</td><td>3,500–4,000</td><td class="sold">3,700</td></tr>
+            <tr><td><img src="https://jah-auction-images.s3.ap-south-1.amazonaws.com/product/thumbnail/auction/1/10.webp" alt=""></td><td>10</td><td>Ancient India</td><td>Silver</td><td>Magadha Janapada (600–400 BC), Silver Karshapana, 2.90g — Extremely Fine.</td><td>1,200–1,500</td><td class="sold">3,700</td></tr>
+            <tr><td><img src="https://jah-auction-images.s3.ap-south-1.amazonaws.com/product/thumbnail/auction/1/17.webp" alt=""></td><td>17</td><td>Ancient India</td><td>Silver</td><td>Shurasena Janapada (c. 400–350 BC), Silver ½ Karshapana, 1.03g — Very Fine.</td><td>1,500–2,000</td><td class="sold">2,500</td></tr>
+            <tr><td><img src="https://jah-auction-images.s3.ap-south-1.amazonaws.com/product/thumbnail/auction/1/21.webp" alt=""></td><td>21</td><td>Ancient India</td><td>Silver</td><td>Mauryan Dynasty (c. 350–250 BC), Silver Karshapana, 3.35g — Very Fine+.</td><td>1,800–2,000</td><td class="sold">1,800</td></tr>
+            <tr><td><img src="https://jah-auction-images.s3.ap-south-1.amazonaws.com/product/thumbnail/auction/1/23.webp" alt=""></td><td>23</td><td>Ancient India</td><td>Copper</td><td>Post-Mauryan, Kaushambi Region (c. 250 BC), Gaj-Lakshmi type, Cast Copper, 8.73g — Fine+.</td><td>4,000–4,500</td><td class="sold">5,000</td></tr>
+            <tr><td><img src="https://jah-auction-images.s3.ap-south-1.amazonaws.com/product/thumbnail/auction/1/24.webp" alt=""></td><td>24</td><td>Ancient India</td><td>Copper</td><td>Post-Mauryan, Kaushambi Region (c. 200 BC), Cast Copper, 6.51g — Very Fine.</td><td>1,500–2,000</td><td class="sold">1,500</td></tr>
+            <tr><td><img src="https://jah-auction-images.s3.ap-south-1.amazonaws.com/product/thumbnail/auction/1/32.webp" alt=""></td><td>32</td><td>Ancient India</td><td>Copper</td><td>Post-Mauryan, Taxila Region, Copper Unit, 6.85g, Facing head of Yaksa — Fine.</td><td>12,000–15,000</td><td class="sold">4,750</td></tr>
+          </tbody>
+        </table></div>
+        <p class="table-note">Showing 10 of 13,000+ records from Auction #1. <a href="#contact">Contact us</a> for a full sample file.</p>
+      </div>
+
+      <!-- INDIAN COINS & STAMPS -->
+      <div class="tab-content" id="tab-ics">
+        <div class="table-wrap"><table>
+          <thead><tr><th>Image</th><th>Product name</th><th>Category</th><th>Price</th><th>Link</th></tr></thead>
+          <tbody>
+            <tr><td><img src="https://indiancoinsandstamps.com/wp-content/uploads/2026/01/IMG20260314201829_merged-597x336.jpg" alt=""></td><td>5 Paise 1976 Food &amp; Work For All Hyderabad Aluminium</td><td>5 Paise–Commemorative</td><td>₹200</td><td><a href="https://indiancoinsandstamps.com/product/5-paise-1976-food-work-for-all-hyderabad-aluminium/" target="_blank">View listing</a></td></tr>
+            <tr><td><img src="https://indiancoinsandstamps.com/wp-content/uploads/2022/01/IMG20250129213525_merged-597x336.jpg" alt=""></td><td>5 Paise 1976 Food &amp; Work For All Kolkata Aluminium</td><td>5 Paise–Commemorative</td><td>₹175</td><td><a href="https://indiancoinsandstamps.com/product/5-paise-1976-food-work-for-all-kolkata-aluminium/" target="_blank">View listing</a></td></tr>
+            <tr><td><img src="https://indiancoinsandstamps.com/wp-content/uploads/2020/06/IMG20250128185856_merged-597x336.jpg" alt=""></td><td>5 Paise 1976 Food &amp; Work For All Mumbai Aluminium</td><td>5 Paise–Commemorative</td><td>₹75</td><td><a href="https://indiancoinsandstamps.com/product/5-paise-1976-food-work-for-all-mumbai/" target="_blank">View listing</a></td></tr>
+            <tr><td><img src="https://indiancoinsandstamps.com/wp-content/uploads/2020/06/IMG20260314201809_merged-597x336.jpg" alt=""></td><td>5 Paise 1977 Save For Development Hyderabad Aluminium</td><td>5 Paise–Commemorative</td><td>₹225</td><td><a href="https://indiancoinsandstamps.com/product/5-paise-1977-save-for-development-hyderabad/" target="_blank">View listing</a></td></tr>
+            <tr><td><img src="https://indiancoinsandstamps.com/wp-content/uploads/2020/06/IMG20240911205500_merged-597x336.jpg" alt=""></td><td>5 Paise 1978 Food &amp; Shelter For All Hyderabad Aluminium</td><td>5 Paise–Commemorative</td><td>₹200</td><td><a href="https://indiancoinsandstamps.com/product/5-paise-1978-food-shelter-for-all-hyderabad/" target="_blank">View listing</a></td></tr>
+            <tr><td><img src="https://indiancoinsandstamps.com/wp-content/uploads/2022/07/IMG20260314201746_merged-597x336.jpg" alt=""></td><td>5 Paise 1979 Happy Child Nation's Pride Hyderabad Aluminium</td><td>5 Paise–Commemorative</td><td>₹150</td><td><a href="https://indiancoinsandstamps.com/product/5-paise-1979-happy-child-nations-pride-hyderabad-aluminium/" target="_blank">View listing</a></td></tr>
+            <tr><td><img src="https://indiancoinsandstamps.com/wp-content/uploads/2021/04/IMG20250810134941_merged-597x336.jpg" alt=""></td><td>10 Paise 1974 Planned Families – Food For All Hyderabad Aluminium</td><td>10 Paise–Commemorative</td><td>₹5,000</td><td><a href="https://indiancoinsandstamps.com/product/10-paise-1974-planned-families-food-for-all-hyderabad-aluminium/" target="_blank">View listing</a></td></tr>
+            <tr><td><img src="https://indiancoinsandstamps.com/wp-content/uploads/2022/07/IMG20260314201514_merged-597x336.jpg" alt=""></td><td>10 Paise 1974 Planned Families – Food For All Kolkata Aluminium</td><td>10 Paise–Commemorative</td><td>₹100</td><td><a href="https://indiancoinsandstamps.com/product/10-paise-1974-planned-families-food-for-all-kolkata-aluminium/" target="_blank">View listing</a></td></tr>
+            <tr><td><img src="https://indiancoinsandstamps.com/wp-content/uploads/2020/11/IMG20250130190403_merged-597x336.jpg" alt=""></td><td>10 Paise 1975 Equality Development Peace Kolkata Aluminium</td><td>10 Paise–Commemorative</td><td>₹250</td><td><a href="https://indiancoinsandstamps.com/product/10-paise-1975-equality-development-peace-kolkata-aluminium/" target="_blank">View listing</a></td></tr>
+            <tr><td><img src="https://indiancoinsandstamps.com/wp-content/uploads/2022/07/IMG20260226190005_merged-597x336.jpg" alt=""></td><td>10 Paise 1976 Food &amp; Work For All Kolkata Aluminium</td><td>10 Paise–Commemorative</td><td>₹450</td><td><a href="https://indiancoinsandstamps.com/product/10-paise-1976-food-work-for-all-kolkata-aluminium-2/" target="_blank">View listing</a></td></tr>
+          </tbody>
+        </table></div>
+        <p class="table-note">Showing 10 of 3,000+ records. <a href="#contact">Contact us</a> for a full sample file.</p>
+      </div>
+
+      <!-- PCGS -->
+      <div class="tab-content" id="tab-pcgs">
+        <div class="table-wrap"><table>
+          <thead><tr><th>Image</th><th>PCGS #</th><th>Name</th><th>Year</th><th>Material</th><th>Auction record (USD)</th><th>Grade</th><th>Auctioneer</th></tr></thead>
+          <tbody>
+            <tr><td><img src="https://images.pcgs.com/CoinFacts/25685771_46522295_800x800.jpg" alt=""></td><td><a href="https://www.pcgs.com/coinfacts/coin/detail/880" target="_blank">880</a></td><td>Fugio 1C — Cross after Date, BN</td><td>1787</td><td>Copper</td><td>$15,275</td><td>AU55</td><td>Stack's Bowers</td></tr>
+            <tr><td><img src="https://images.pcgs.com/CoinFacts/46412476_243792714_800x800.jpg" alt=""></td><td><a href="https://www.pcgs.com/coinfacts/coin/detail/883" target="_blank">883</a></td><td>Fugio 1C — States United, 4 Cinq, BN</td><td>1787</td><td>Other</td><td>$28,800</td><td>MS66BN</td><td>Stack's Bowers</td></tr>
+            <tr><td><img src="https://images.pcgs.com/CoinFacts/12525462_247060981_800x800.jpg" alt=""></td><td><a href="https://www.pcgs.com/coinfacts/coin/detail/871" target="_blank">871</a></td><td>Fugio 1C — American Congress Newman 1-CC, BN</td><td>1787</td><td>Copper</td><td>$63,800</td><td>AU50</td><td>Bowers &amp; Merena</td></tr>
+            <tr><td><img src="https://images.pcgs.com/CoinFacts/42464209_218081162_800x800.jpg" alt=""></td><td><a href="https://www.pcgs.com/coinfacts/coin/detail/877" target="_blank">877</a></td><td>Fugio 1C — Cross after Date Raised Rims, BN</td><td>1787</td><td>Copper</td><td>$55,813</td><td>MS64</td><td>Heritage Auctions</td></tr>
+            <tr><td><img src="https://images.pcgs.com/CoinFacts/48424218_255417476_800x800.jpg" alt=""></td><td><a href="https://www.pcgs.com/coinfacts/coin/detail/884" target="_blank">884</a></td><td>Fugio 1C — States United, 4 Cinq., RB</td><td>1787</td><td>Other</td><td>$19,975</td><td>MS63</td><td>Stack's Bowers</td></tr>
+            <tr><td><img src="https://images.pcgs.com/CoinFacts/43176431_221595645_800x800.jpg" alt=""></td><td><a href="https://www.pcgs.com/coinfacts/coin/detail/886" target="_blank">886</a></td><td>Fugio 1C — States United, 1 Over Horiz. 1, BN</td><td>1787</td><td>Other</td><td>$29,900</td><td>MS67</td><td>Goldberg Auctioneers</td></tr>
+            <tr><td><img src="https://images.pcgs.com/CoinFacts/40318351_200549743_800x800.jpg" alt=""></td><td><a href="https://www.pcgs.com/coinfacts/coin/detail/895" target="_blank">895</a></td><td>Fugio 1C — 4 Cinq, Raised Rims, BN</td><td>1787</td><td>Other</td><td>$40,800</td><td>MS65BN</td><td>Heritage Auctions</td></tr>
+            <tr><td><img src="https://images.pcgs.com/CoinFacts/42464216_218080830_800x800.jpg" alt=""></td><td><a href="https://www.pcgs.com/coinfacts/coin/detail/898" target="_blank">898</a></td><td>Fugio 1C — 8 Pointed Stars, BN</td><td>1787</td><td>Other</td><td>$11,750</td><td>AU58</td><td>Heritage Auctions</td></tr>
+            <tr><td><img src="https://images.pcgs.com/CoinFacts/61477694_291944367_800x800.jpg" alt=""></td><td><a href="https://www.pcgs.com/coinfacts/coin/detail/907" target="_blank">907</a></td><td>Fugio 1C — Club Rays, FUCIO, BN</td><td>1787</td><td>Other</td><td>$35,250</td><td>XF40</td><td>Heritage Auctions</td></tr>
+            <tr><td><img src="https://images.pcgs.com/CoinFacts/52616364_290837949_800x800.jpg" alt=""></td><td><a href="https://www.pcgs.com/coinfacts/coin/detail/910" target="_blank">910</a></td><td>Fugio 1C — United States Club Rays, Concave Ends, BN</td><td>1787</td><td>Other</td><td>$94,000</td><td>AU50</td><td>Stack's Bowers</td></tr>
+          </tbody>
+        </table></div>
+        <p class="table-note">Showing 10 of 28,000+ records. <a href="#contact">Contact us</a> for a full sample file.</p>
+      </div>
+
+      <!-- NUMISTA -->
+      <div class="tab-content" id="tab-numista">
+        <div class="table-wrap"><table>
+          <thead><tr><th>Image</th><th>N#</th><th>Issuer</th><th>Years</th><th>Value</th><th>Composition</th><th>Weight</th><th>Diameter</th><th>Rarity</th></tr></thead>
+          <tbody>
+            <tr><td><img src="https://en.numista.com/catalogue/photos/france/11234-original.jpg" alt=""></td><td><a href="https://en.numista.com/1" target="_blank">1</a></td><td>France</td><td>1962–2001</td><td>1 Centime</td><td>Stainless steel</td><td>1.65 g</td><td>15 mm</td><td>3</td></tr>
+            <tr><td><img src="https://en.numista.com/catalogue/photos/france/5f9dd6203f3f57.28774259-original.jpg" alt=""></td><td><a href="https://en.numista.com/10" target="_blank">10</a></td><td>France</td><td>1992–2001</td><td>20 Francs</td><td>Trimetallic</td><td>9 g</td><td>27 mm</td><td>4</td></tr>
+            <tr><td><img src="https://en.numista.com/catalogue/photos/france/6289eb6f1395f8.91533745-original.jpg" alt=""></td><td><a href="https://en.numista.com/100" target="_blank">100</a></td><td>France</td><td>1999–2006</td><td>10 Euro Cents</td><td>Nordic gold</td><td>4.1 g</td><td>19.75 mm</td><td>3</td></tr>
+            <tr><td><img src="https://en.numista.com/catalogue/photos/danemark/2972-original.jpg" alt=""></td><td><a href="https://en.numista.com/1000" target="_blank">1000</a></td><td>Denmark</td><td>1960–1972</td><td>5 Øre</td><td>Bronze (95% Cu)</td><td>6 g</td><td>24 mm</td><td>3</td></tr>
+            <tr><td><img src="https://en.numista.com/catalogue/photos/tonga/696b9e2c6d2b82.47245019-original.jpg" alt=""></td><td><a href="https://en.numista.com/10000" target="_blank">10000</a></td><td>Tonga</td><td>1975–1978</td><td>50 Seniti</td><td>Copper-nickel</td><td>14.6 g</td><td>32.5 mm</td><td>21</td></tr>
+            <tr><td><img src="https://en.numista.com/catalogue/photos/pei_province/627ea4b8933554.51208476-original.jpg" alt=""></td><td><a href="https://en.numista.com/100000" target="_blank">100000</a></td><td>Prince Edward Island</td><td>—</td><td>1 Penny</td><td>Copper</td><td>9.0 g</td><td>35.0 mm</td><td>97</td></tr>
+            <tr><td><img src="https://en.numista.com/catalogue/photos/macedoine/234-original.jpg" alt=""></td><td><a href="https://en.numista.com/100004" target="_blank">100004</a></td><td>North Macedonia</td><td>2000</td><td>2 Denars</td><td>Gold (.916)</td><td>7 g</td><td>23.8 mm</td><td>97</td></tr>
+            <tr><td><img src="https://en.numista.com/catalogue/photos/macedoine/66ef331abf5604.74071014-original.jpg" alt=""></td><td><a href="https://en.numista.com/100005" target="_blank">100005</a></td><td>North Macedonia</td><td>1999</td><td>10 Denars</td><td>Gold (.916)</td><td>7 g</td><td>23 mm</td><td>97</td></tr>
+            <tr><td><img src="https://en.numista.com/catalogue/photos/pei_province/627ea4bc1e7a77.38881386-original.jpg" alt=""></td><td><a href="https://en.numista.com/100007" target="_blank">100007</a></td><td>Prince Edward Island</td><td>1840</td><td>½ Penny</td><td>Copper</td><td>6.1 g</td><td>27.7 mm</td><td>100</td></tr>
+            <tr><td><img src="https://en.numista.com/catalogue/photos/vatican/5f7538cba33d88.53001569-original.jpg" alt=""></td><td><a href="https://en.numista.com/10001" target="_blank">10001</a></td><td>Vatican City</td><td>2008–2013</td><td>2 Euros</td><td>Bimetallic</td><td>8.5 g</td><td>25.75 mm</td><td>13</td></tr>
+          </tbody>
+        </table></div>
+        <p class="table-note">Showing 10 of 310,000+ records. <a href="#contact">Contact us</a> for a full sample file.</p>
+      </div>
+
+      <!-- ZENO -->
+      <div class="tab-content" id="tab-zeno">
+        <div class="table-wrap"><table>
+          <thead><tr><th>Image</th><th>Name</th><th>Currency</th><th>Material</th><th>Weight (g)</th><th>Mint</th><th>Year</th><th>Context</th></tr></thead>
+          <tbody>
+            <tr><td><img src="https://www.zeno.ru/data/3708/medium/zeno_377458.jpeg" alt=""></td><td>MT Thaler restrike — Wien 1780</td><td>Thaler</td><td>AR</td><td>27.95</td><td>Wien</td><td>1795–1803</td><td>Foreign coins in al-Yaman</td></tr>
+            <tr><td><img src="https://www.zeno.ru/data/3709/medium/zeno_377456.jpeg" alt=""></td><td>MT Thaler restrike — Milano 1780</td><td>Thaler</td><td>AR</td><td>27.91</td><td>Milano</td><td>1815/1828</td><td>Foreign coins in al-Yaman</td></tr>
+            <tr><td><img src="https://www.zeno.ru/data/22830/medium/zeno_377455.jpg" alt=""></td><td>Japan Shima-Sen, unknown find site</td><td>Wen</td><td>Bronze</td><td>2.84</td><td>—</td><td>1338–1573</td><td>FAR EAST › Japan › Cash coins</td></tr>
+            <tr><td><img src="https://www.zeno.ru/data/3707/medium/zeno_377454.jpeg" alt=""></td><td>MT Thaler restrike — Günzburg 1780</td><td>Thaler</td><td>AR</td><td>27.95</td><td>Günzburg</td><td>1797–1800</td><td>Foreign coins in al-Yaman</td></tr>
+            <tr><td><img src="https://www.zeno.ru/data/22263/medium/zeno_377359.jpg" alt=""></td><td>Ilkhans, Anonymous, AR Dirham</td><td>Dirham</td><td>AR</td><td>2.25</td><td>MM</td><td>?</td><td>Islamic › Pre-Mongols period</td></tr>
+            <tr><td><img src="https://www.zeno.ru/data/14474/medium/zeno_377451.jpg" alt=""></td><td>Zheng He Tong Bao — bug characters</td><td>Wen</td><td>Leaded bronze</td><td>4.38</td><td>—</td><td>—</td><td>SOUTHEAST ASIA › Chinese-style coins</td></tr>
+            <tr><td><img src="https://www.zeno.ru/data/29905/medium/zeno_377358.jpg" alt=""></td><td>Sumaydihid of Almería, fractional dirham</td><td>Fractional dirham</td><td>AR</td><td>1.36</td><td>NM</td><td>ND</td><td>ISLAMIC WORLD › Ṣumāydiḥid of Almería</td></tr>
+            <tr><td><img src="https://www.zeno.ru/data/8454/medium/zeno_377356.jpg" alt=""></td><td>Abbasid AR Dirham — al-Amin, 194 AH</td><td>Dirham</td><td>AR</td><td>3.02</td><td>Madinat Marw</td><td>194 AH</td><td>ISLAMIC WORLD › Abbasid › al-Amin</td></tr>
+            <tr><td><img src="https://www.zeno.ru/data/19365/medium/zeno_377353.jpg" alt=""></td><td>Babur, AR Shahrukhi — Qunduz AH933</td><td>Shahrukhi</td><td>AR</td><td>—</td><td>Qunduz</td><td>AH933</td><td>SOUTH ASIA › India › Mughal Empire</td></tr>
+            <tr><td><img src="https://www.zeno.ru/data/21819/medium/zeno_377348.jpg" alt=""></td><td>Bombay Presidency, ½ Rupee — Poona FE1233</td><td>½ Rupee</td><td>AR</td><td>5.63</td><td>Poona</td><td>FE 1233</td><td>SOUTH ASIA › British East India Company</td></tr>
+          </tbody>
+        </table></div>
+        <p class="table-note">Showing 10 of 350,000+ records. <a href="#contact">Contact us</a> for a full sample file.</p>
+      </div>
+
+      <!-- SEDWICK -->
+      <div class="tab-content" id="tab-sedwick">
+        <div class="table-wrap"><table>
+          <thead><tr><th>Image</th><th>Lot</th><th>Category</th><th>Title</th><th>Estimate (USD)</th><th>Hammer (USD)</th><th>Sold (USD)</th></tr></thead>
+          <tbody>
+            <tr><td><img src="https://dygtyjqp7pi0m.cloudfront.net/i/77642/59770205_1.jpg?v=8DEADCB4CBCD840" alt=""></td><td>1665</td><td>Cobs – Gold</td><td>SPAIN, Seville, gold cob 2 escudos, Philip III — NGC AU details</td><td>$2,500–$3,750</td><td>$3,500</td><td class="sold">$4,200</td></tr>
+            <tr><td><img src="https://dygtyjqp7pi0m.cloudfront.net/i/77642/59770206_1.jpg?v=8DEADCB583B3270" alt=""></td><td>1666</td><td>Shipwreck Ingots</td><td>Lot of tiny nuggets, 0.37g, ex-1715 Fleet (Rio Mar)</td><td>$70–$100</td><td>$525</td><td class="sold">$630</td></tr>
+            <tr><td><img src="https://dygtyjqp7pi0m.cloudfront.net/i/77642/59770208_1.jpg?v=8DEADCB7B161440" alt=""></td><td>1668</td><td>Shipwreck Ingots</td><td>Small gold nugget, 0.46g — NGC / SS Central America</td><td>$200–$300</td><td>$375</td><td class="sold">$450</td></tr>
+            <tr><td><img src="https://dygtyjqp7pi0m.cloudfront.net/i/77642/59770210_1.jpg?v=8DEADCB89843B60" alt=""></td><td>1670</td><td>Shipwreck Ingots</td><td>Silver 1-oz "Golden Crew" medallion from Atocha silver, 1985</td><td>$500–$1,000</td><td>$650</td><td class="sold">$780</td></tr>
+            <tr><td><img src="https://dygtyjqp7pi0m.cloudfront.net/i/77642/59770212_1.jpg?v=8DEADCB97F5E4F0" alt=""></td><td>1672</td><td>Shipwreck Ingots</td><td>Silver 1-oz restrike, Mexican 8 reales Royal 1621 D, Atocha silver</td><td>$100–$150</td><td>$325</td><td class="sold">$390</td></tr>
+            <tr><td><img src="https://dygtyjqp7pi0m.cloudfront.net/i/77642/59770217_1.jpg?v=8DEADCBD8A2BFA0" alt=""></td><td>1677</td><td>Shipwreck Coins</td><td>SPAIN, Seville, cob 8 reales, Philip II — ex Santiago 1585</td><td>$125–$200</td><td>$400</td><td class="sold">$480</td></tr>
+            <tr><td><img src="https://dygtyjqp7pi0m.cloudfront.net/i/77642/59770218_1.jpg?v=8DEADCBEAE4F930" alt=""></td><td>1678</td><td>Shipwreck Coins</td><td>SPAIN, Seville, cob 2 reales, Philip II, assayer Gothic D</td><td>$150–$225</td><td>$700</td><td class="sold">$840</td></tr>
+            <tr><td><img src="https://dygtyjqp7pi0m.cloudfront.net/i/77642/59770219_1.jpg?v=8DEADCBF8819F80" alt=""></td><td>1679</td><td>Shipwreck Coins</td><td>BOLIVIA, Potosí, clump of 4 cob 8 reales, Philip II — encrusted</td><td>$800–$1,200</td><td>$1,600</td><td class="sold">$1,920</td></tr>
+            <tr><td><img src="https://dygtyjqp7pi0m.cloudfront.net/i/77642/59770221_1.jpg?v=8DEADCC1B6F4600" alt=""></td><td>1681</td><td>Shipwreck Coins</td><td>BOLIVIA, Potosí, cob 2 reales, Philip III, assayer R — Atocha</td><td>$350–$500</td><td>$975</td><td class="sold">$1,170</td></tr>
+            <tr><td><img src="https://dygtyjqp7pi0m.cloudfront.net/i/77642/59770228_1.jpg?v=8DEADCC83E7CF90" alt=""></td><td>1688</td><td>Shipwreck Coins</td><td>MEXICO, Mexico City, cob 8 reales, Philip IV — ex Concepción 1641</td><td>$200–$300</td><td>$450</td><td class="sold">$540</td></tr>
+          </tbody>
+        </table></div>
+        <p class="table-note">Showing 10 of 15,000+ records. <a href="#contact">Contact us</a> for a full sample file.</p>
+      </div>
+
+      <!-- VAUCTIONS -->
+      <div class="tab-content" id="tab-vauctions">
+        <div class="table-wrap"><table>
+          <thead><tr><th>Image</th><th>Lot</th><th>Title</th><th>Auction</th><th>Price (USD)</th><th>Status</th><th>Ended</th></tr></thead>
+          <tbody>
+            <tr><td><img src="https://rainworx.s3.amazonaws.com/1714157/E48-G055TN.jpg" alt=""></td><td>1</td><td>KINGS of LYDIA, temp. Ardys–Alyattes, Ca. 630s–564/53 BC. AV Trite</td><td>Pars Coins eSale #48</td><td>$500</td><td class="sold">Sold</td><td>Apr 16, 2026</td></tr>
+            <tr><td><img src="https://rainworx.s3.amazonaws.com/1714157/E48-G003TN.jpg" alt=""></td><td>3</td><td>KINGS of MACEDON, Alexander III 'the Great'. 336–323 BC. AR Drachm</td><td>Pars Coins eSale #48</td><td>$75</td><td class="sold">Sold</td><td>Apr 16, 2026</td></tr>
+            <tr><td><img src="https://rainworx.s3.amazonaws.com/1714157/E48-G002TN.jpg" alt=""></td><td>6</td><td>KINGS of MACEDON, Philip III Arrhidaios. 323–317 BC. Fourée Obol</td><td>Pars Coins eSale #48</td><td>$35</td><td class="sold">Sold</td><td>Apr 16, 2026</td></tr>
+            <tr><td><img src="https://rainworx.s3.amazonaws.com/1714157/E48-G029TN.jpg" alt=""></td><td>7</td><td>MACEDON, Interregnum. Anonymous issue. Circa 288–277 BC. Æ</td><td>Pars Coins eSale #48</td><td>$50</td><td class="sold">Sold</td><td>Apr 16, 2026</td></tr>
+            <tr><td><img src="https://rainworx.s3.amazonaws.com/1714157/E48-G030TN.jpg" alt=""></td><td>8</td><td>MACEDON, Amphipolis. Circa 187–31 BC. Æ. Rare.</td><td>Pars Coins eSale #48</td><td>$75</td><td class="sold">Sold</td><td>Apr 16, 2026</td></tr>
+            <tr><td><img src="https://rainworx.s3.amazonaws.com/1714157/E48-G015TN.jpg" alt=""></td><td>10</td><td>THRACE, Maroneia. Circa 398/97–348/47 BC. Æ</td><td>Pars Coins eSale #48</td><td>$90</td><td class="sold">Sold</td><td>Apr 16, 2026</td></tr>
+            <tr><td><img src="https://rainworx.s3.amazonaws.com/1714157/E48-G054TN.jpg" alt=""></td><td>14</td><td>MYSIA, Pergamon. Circa 200–133 BC. Æ</td><td>Pars Coins eSale #48</td><td>$95</td><td class="sold">Sold</td><td>Apr 16, 2026</td></tr>
+            <tr><td><img src="https://rainworx.s3.amazonaws.com/1714157/E48-G019TN.jpg" alt=""></td><td>17</td><td>PONTIC KINGDOM, Amisos. Struck under Mithradates VI. 105–85 BC. Æ</td><td>Pars Coins eSale #48</td><td>$55</td><td class="sold">Sold</td><td>Apr 16, 2026</td></tr>
+            <tr><td><img src="https://rainworx.s3.amazonaws.com/1714157/E48-G033TN.jpg" alt=""></td><td>19</td><td>PTOLEMAIC KINGS of EGYPT, Ptolemy I. 305–282 BC. Æ Obol</td><td>Pars Coins eSale #48</td><td>$27</td><td class="sold">Sold</td><td>Apr 16, 2026</td></tr>
+            <tr><td><img src="https://rainworx.s3.amazonaws.com/1714157/E48-G005TN.jpg" alt=""></td><td>27</td><td>SELEUKID KINGS, Seleukos IV Philopator, 187–175 BC. AR Drachm</td><td>Pars Coins eSale #48</td><td>$50</td><td class="sold">Sold</td><td>Apr 16, 2026</td></tr>
+          </tbody>
+        </table></div>
+        <p class="table-note">Showing 10 of 16,000+ records. <a href="#contact">Contact us</a> for a full sample file.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Get in touch</h2>
+    <p class="section-sub">Tell us which dataset you need, your preferred format (CSV or JSON), and how often you need updates. We reply within 24 hours.</p>
+    <form class="contact-form" action="https://formspree.io/f/mnjrjdov" method="POST">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" placeholder="John Smith" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" placeholder="john@example.com" required />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="dataset">Dataset you are interested in</label>
+        <select id="dataset" name="dataset">
+          <option value="">Select a dataset</option>
+          <option>Oswal Auctions</option>
+          <option>Jain Auctions</option>
+          <option>Indian Coins &amp; Stamps</option>
+          <option>PCGS</option>
+          <option>Numista</option>
+          <option>Zeno</option>
+          <option>Sedwick</option>
+          <option>Vauctions</option>
+          <option>All datasets</option>
+          <option>Custom requirement</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="message">Your requirement</label>
+        <textarea id="message" name="message" rows="5" placeholder="Describe what you need — volume, format (CSV/JSON), update frequency, specific filters, or any other details..." required></textarea>
+      </div>
+      <button type="submit" class="btn-primary">Send message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p><strong>CoinData</strong> &mdash; numismatic data marketplace</p>
+    <p>bobby2045@gmail.com</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
